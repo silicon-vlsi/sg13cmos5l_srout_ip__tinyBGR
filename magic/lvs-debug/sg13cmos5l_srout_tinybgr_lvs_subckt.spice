@@ -1,0 +1,96 @@
+** sch_path: /foss/designs/gits/sg13cmos5l_srout_ip__tinyBGR/xschem/sg13cmos5l_srout_tinybgr.sch
+.subckt sg13cmos5l_srout_tinybgr AVDD VREF IOUT1 AVSS
+*.PININFO AVDD:B AVSS:B VREF:O IOUT1:O
+QQ1 AVSS AVSS Vbe1 pnpMPA a=1.4e-12 p=5.4e-06 m=8
+QQ2 AVSS AVSS Vbe2 pnpMPA a=1.4e-12 p=5.4e-06
+MMN2 Vgn Vgn Vbe2 AVSS sg13_hv_nmos w=2.6u l=1u ng=1 m=6
+MMN1 Vgp Vgn Vbe2mr AVSS sg13_hv_nmos w=2.6u l=1u ng=1 m=12
+MMP2 Vgn Vgp AVDD AVDD sg13_hv_pmos w=1u l=4u ng=1 m=3
+MMP1 Vgp Vgp AVDD AVDD sg13_hv_pmos w=1u l=4u ng=1 m=6
+MMP3 IOUT1 Vgp AVDD AVDD sg13_hv_pmos w=1u l=4u ng=1 m=11
+MMP5 VREF Vgp AVDD AVDD sg13_hv_pmos w=1u l=4u ng=1 m=3
+MMNSU1 AVDD vgsu1 Vgn AVSS sg13_hv_nmos w=1u l=2u ng=1
+MMPSU1 net1 VREF AVDD AVDD sg13_hv_pmos w=0.35u l=6u ng=1
+MMNSU2 vgsu1 VREF AVSS AVSS sg13_hv_nmos w=1u l=1u ng=1
+MMPSU2 net2 VREF net1 AVDD sg13_hv_pmos w=0.35u l=6u ng=1
+MMPSU3 net3 VREF net2 AVDD sg13_hv_pmos w=0.35u l=6u ng=1
+MMPSU4 vgsu1 VREF net3 AVDD sg13_hv_pmos w=0.35u l=6u ng=1
+xbgrres VREF Vbe2mr AVSS Vbe2 Vbe1 sg13cmos5l_srout_tinybgr_res
+QQ3 AVSS AVSS AVSS pnpMPA a=1.4e-12 p=5.4e-06 m=2
+MMN3 AVSS AVSS AVSS AVSS sg13_hv_nmos w=2.6u l=1u ng=1 m=2
+MMN4 Vgn AVSS AVSS AVSS sg13_hv_nmos w=2.6u l=1u ng=1 m=2
+MMN5 Vgp AVSS AVSS AVSS sg13_hv_nmos w=2.6u l=1u ng=1 m=4
+MMP4 AVDD Vgp AVDD AVDD sg13_hv_pmos w=1u l=4u ng=1 m=4
+MMP6 Vgn AVDD AVDD AVDD sg13_hv_pmos w=1u l=4u ng=1
+MMP7 IOUT1 AVDD AVDD AVDD sg13_hv_pmos w=1u l=4u ng=1
+MMP8 VREF AVDD AVDD AVDD sg13_hv_pmos w=1u l=4u ng=1
+MMP9 AVDD AVDD AVDD AVDD sg13_hv_pmos w=1u l=4u ng=1 m=9
+.ends
+
+* expanding   symbol:  sg13cmos5l_srout_tinybgr_res.sym # of pins=5
+** sym_path: /foss/designs/gits/sg13cmos5l_srout_ip__tinyBGR/xschem/sg13cmos5l_srout_tinybgr_res.sym
+** sch_path: /foss/designs/gits/sg13cmos5l_srout_ip__tinyBGR/xschem/sg13cmos5l_srout_tinybgr_res.sch
+.subckt sg13cmos5l_srout_tinybgr_res Vref Vbe2mr AVSS Vbe2 Vbe1
+*.PININFO Vbe1:B Vbe2:B AVSS:B Vbe2mr:B Vref:B
+RR3 Vbe2mr net21 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR1 net21 Vbe1 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR2 net2 net1 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR4 net1 Vbe2 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR5 net3 net2 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR6 net4 net3 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR7 net22 net4 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR8 net6 net5 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR9 net5 net23 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR10 net7 net6 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR11 net8 net7 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR12 net22 net8 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR13 net10 net9 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR14 net9 net23 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR15 net11 net10 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR16 net12 net11 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR17 net24 net12 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR18 net14 net13 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR19 net13 net25 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR20 net15 net14 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR21 net16 net15 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR22 net24 net16 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR23 net18 net17 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR24 net17 net26 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR25 net19 net18 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR26 net20 net19 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR27 Vref net20 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR28 net25 net27 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR29 net26 net27 ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 1 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0
+RR30 AVSS AVSS ( 1.6e-4 / 1.1u + 1360.0 * ( (@b + 1)* 4u + ( 1.081*1.1u + 0.18e-6 )*@b ) / ( 1.1u - 0.04e-6 ) ) / 9 $SUB=AVSS
++ $[rhigh] w=1.1u l=4u b=0 m=9
+.ends
+

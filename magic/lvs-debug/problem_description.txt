@@ -1,0 +1,14 @@
+FILE DESCRIPTION:
+
+sg13cmos5l_srout_tinybgr_lvs_subckt.spice : Netlist of xschem schematic with the xschem option "Simulation-> LVS-> LVS + top level is .subckt". Spice prefix is selected.
+sg13cmos5l_srout_tinybgr_nolvs_nosubckt.spice : Netlist of xschem schematic with no LVS or subckt option. 
+bgr_lvs_ng.spice : Extracted netlist from magic using following sequence of tcl commands: `extract all; ext2spice lvs; ext2spice -o bgr_lvs_ng.spice -f ngspice`
+bgr_lvs_nohier_ng.spice : Extracted netlist from magic using following sequence of tcl commands: `extract all; ext2spice lvs; ext2spice hierarchy off; ext2spice -o bgr_lvs_nohier_ng.spice -f ngspice`
+lvs-flat-match.out : Output of `netgen -batch lvs "sg13cmos5l_srout_tinybgr_nolvs_nosubckt.spice" "bgr_lvs_nohier_ng.spice" /foss/pdks/ihp-sg13cmos5l/libs.tech/netgen/ihp-sg13cmos5l_setup.tcl`
+lvs-hier-mismatch.out : Output `netgen -batch lvs "sg13cmos5l_srout_tinybgr_lvs_subckt.spice sg13cmos5l_srout_tinybgr" "bgr_lvs_ng.spice sg13cmos5l_srout_tinybgr" /foss/pdks/ihp-sg13cmos5l/libs.tech/netgen/ihp-sg13cmos5l_setup.tcl`
+
+
+PROBLEM DESCRIPTION:
+lvs-hier-mismatch.out is the output of the failed LVS and
+ lvs-flat-match.outs the output of MATCHED LVS
+Debug the problem and suggest how to get the hierarchial LVS working since the flat netlist match. 

@@ -1,0 +1,37 @@
+
+Circuit 1 cell rhigh and Circuit 2 cell rhigh are black boxes.
+Equate elements:  no current cell.
+Device classes rhigh and rhigh are equivalent.
+
+Circuit 1 cell pnpMPA and Circuit 2 cell pnpMPA are black boxes.
+Equate elements:  no current cell.
+Device classes pnpMPA and pnpMPA are equivalent.
+
+Circuit 1 cell sg13_hv_nmos and Circuit 2 cell sg13_hv_nmos are black boxes.
+Equate elements:  no current cell.
+Device classes sg13_hv_nmos and sg13_hv_nmos are equivalent.
+
+Circuit 1 cell sg13_hv_pmos and Circuit 2 cell sg13_hv_pmos are black boxes.
+Equate elements:  no current cell.
+Device classes sg13_hv_pmos and sg13_hv_pmos are equivalent.
+Flattening unmatched subcell sg13cmos5l_srout_tinybgr_res in circuit sg13cmos5l_srout_tinybgr_nolvs_nosubckt.spice (0)(1 instance)
+
+Class sg13cmos5l_srout_tinybgr_nolvs_nosubckt.spice (0):  Merged 27 series devices.
+Class bgr_lvs_nohier_ng.spice (1):  Merged 67 parallel devices.
+Class bgr_lvs_nohier_ng.spice (1):  Merged 27 series devices.
+Subcircuit summary:
+Circuit 1: sg13cmos5l_srout_tinybgr_nolvs_ |Circuit 2: bgr_lvs_nohier_ng.spice         
+-------------------------------------------|-------------------------------------------
+pnpMPA (11->3)                             |pnpMPA (11->3)                             
+sg13_hv_nmos (28->7)                       |sg13_hv_nmos (28->7)                       
+sg13_hv_pmos (43->13)                      |sg13_hv_pmos (43->13)                      
+rhigh (38->3)                              |rhigh (38->3)                              
+Number of devices: 26                      |Number of devices: 26                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes sg13cmos5l_srout_tinybgr_nolvs_nosubckt.spice and bgr_lvs_nohier_ng.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

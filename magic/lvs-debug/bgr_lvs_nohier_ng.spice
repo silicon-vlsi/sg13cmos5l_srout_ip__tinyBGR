@@ -1,0 +1,122 @@
+* NGSPICE file created from sg13cmos5l_srout_tinybgr.ext - technology: ihp-sg13cmos5l
+
+X0 AVDD AVDD VREF AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X1 AVDD XMP2/G9 IOUT1 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X2 AVDD AVDD AVDD AVDD sg13_hv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=4u
+X3 AVDD XMP2/G9 XMP2/G9 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X4 AVDD XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X5 AVDD AVDD AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X6 IOUT1 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X7 VREF XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X8 XMP2/G9 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X9 AVDD XMP2/G9 XMN2/G7 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X10 AVDD XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X11 AVDD XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X12 AVDD XMP2/G9 VREF AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X13 XMP2/G9 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X14 AVDD XMP2/G9 IOUT1 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X15 IOUT1 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X16 AVDD XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X17 AVDD XMP2/G9 IOUT1 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X18 IOUT1 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X19 AVDD XMP2/G9 XMP2/G9 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X20 IOUT1 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X21 IOUT1 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X22 AVDD AVDD XMN2/G7 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X23 XMP2/G9 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X24 VREF XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X25 AVDD AVDD AVDD AVDD sg13_hv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=4u
+X26 AVDD XMP2/G9 IOUT1 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X27 AVDD AVDD AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=4u
+X28 AVDD AVDD AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=4u
+X29 AVDD XMP2/G9 XMP2/G9 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X30 AVDD AVDD IOUT1 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X31 AVDD AVDD AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X32 XMN2/G7 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X33 IOUT1 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X34 AVDD AVDD AVDD AVDD sg13_hv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=4u
+X35 AVDD AVDD AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X36 XMN2/G7 XMP2/G9 AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X37 AVDD XMP2/G9 IOUT1 AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=4u
+X38 AVDD AVDD AVDD AVDD sg13_hv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=4u
+X39 AVSS AVSS XMP2/G9 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X40 XMP2/G9 XMN2/G7 XMN2/S7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X41 XMN2/G7 AVSS AVSS AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X42 XQ2/E_5 XMN2/G7 XMN2/G7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X43 XMP2/G9 AVSS AVSS AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X44 AVSS AVSS AVSS AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.884p ps=5.88u w=2.6u l=1u
+X45 XMN2/G7 XMN2/G7 XQ2/E_5 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X46 XQ2/E_5 XMN2/G7 XMN2/G7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X47 XMN2/G7 XMN2/G7 XQ2/E_5 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X48 AVSS AVSS XMN2/G7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X49 XMN2/S7 XMN2/G7 XMP2/G9 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X50 XMP2/G9 XMN2/G7 XMN2/S7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X51 XQ2/E_5 XMN2/G7 XMN2/G7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X52 XMN2/S7 XMN2/G7 XMP2/G9 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X53 XMP2/G9 XMN2/G7 XMN2/S7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X54 XMP2/G9 AVSS AVSS AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X55 XMP2/G9 XMN2/G7 XMN2/S7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X56 XMP2/G9 XMN2/G7 XMN2/S7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X57 XMN2/G7 XMN2/G7 XQ2/E_5 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X58 XMN2/S7 XMN2/G7 XMP2/G9 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X59 XMN2/S7 XMN2/G7 XMP2/G9 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X60 AVSS AVSS AVSS AVSS sg13_hv_nmos ad=0.884p pd=5.88u as=0.494p ps=2.98u w=2.6u l=1u
+X61 XMN2/S7 XMN2/G7 XMP2/G9 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X62 XMP2/G9 XMN2/G7 XMN2/S7 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X63 AVSS AVSS XMP2/G9 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X64 XMN2/S7 XMN2/G7 XMP2/G9 AVSS sg13_hv_nmos ad=0.494p pd=2.98u as=0.494p ps=2.98u w=2.6u l=1u
+X65 XMPSU1/S3 VREF XMNSU2/D AVDD sg13_hv_pmos ad=0.119p pd=1.38u as=0.119p ps=1.38u w=0.35u l=6u
+X66 XMPSU1/S2 VREF XMPSU1/D3 AVDD sg13_hv_pmos ad=0.119p pd=1.38u as=0.119p ps=1.38u w=0.35u l=6u
+X67 XMPSU1/S2 VREF AVDD AVDD sg13_hv_pmos ad=0.119p pd=1.38u as=0.119p ps=1.38u w=0.35u l=6u
+X68 XMPSU1/S3 VREF XMPSU1/D3 AVDD sg13_hv_pmos ad=0.119p pd=1.38u as=0.119p ps=1.38u w=0.35u l=6u
+X69 AVSS AVSS XQ2/E_9 pnpMPA a=1.4p p=5.4u
+X70 AVSS AVSS XQ2/E_9 pnpMPA a=1.4p p=5.4u
+X71 AVSS AVSS AVSS pnpMPA a=1.4p p=5.4u
+X72 AVSS AVSS XQ2/E_9 pnpMPA a=1.4p p=5.4u
+X73 AVSS AVSS AVSS pnpMPA a=1.4p p=5.4u
+X74 AVSS AVSS XQ2/E_5 pnpMPA a=1.4p p=5.4u
+X75 AVSS AVSS XQ2/E_9 pnpMPA a=1.4p p=5.4u
+X76 AVSS AVSS XQ2/E_9 pnpMPA a=1.4p p=5.4u
+X77 AVSS AVSS XQ2/E_9 pnpMPA a=1.4p p=5.4u
+X78 AVSS AVSS XQ2/E_9 pnpMPA a=1.4p p=5.4u
+X79 AVSS AVSS XQ2/E_9 pnpMPA a=1.4p p=5.4u
+X80 XR27/R1_9 XR27/R2_8 AVSS rhigh l=4u w=1.1u
+X81 XR27/R1_23 XR27/R2_24 AVSS rhigh l=4u w=1.1u
+X82 VREF XR27/R2_32 AVSS rhigh l=4u w=1.1u
+X83 AVSS AVSS AVSS rhigh l=4u w=1.1u
+X84 AVSS AVSS AVSS rhigh l=4u w=1.1u
+X85 XR27/R1_11 XR27/R2_12 AVSS rhigh l=4u w=1.1u
+X86 XR27/R1_25 XR27/R2_26 AVSS rhigh l=4u w=1.1u
+X87 AVSS AVSS AVSS rhigh l=4u w=1.1u
+X88 XR27/R1_5 XR27/R2_6 AVSS rhigh l=4u w=1.1u
+X89 XR27/R1_15 XQ2/E_9 AVSS rhigh l=4u w=1.1u
+X90 XR27/R1_21 XR27/R2_22 AVSS rhigh l=4u w=1.1u
+X91 XR27/R1_27 XR27/R2_26 AVSS rhigh l=4u w=1.1u
+X92 AVSS AVSS AVSS rhigh l=4u w=1.1u
+X93 XR27/R1_31 XR27/R2_32 AVSS rhigh l=4u w=1.1u
+X94 XR27/R1_29 XR27/R2_28 AVSS rhigh l=4u w=1.1u
+X95 AVSS AVSS AVSS rhigh l=4u w=1.1u
+X96 XR27/R1_19 XR27/R2_20 AVSS rhigh l=4u w=1.1u
+X97 XR27/R1_21 XR27/R2_20 AVSS rhigh l=4u w=1.1u
+X98 XR27/R1_25 XR27/R2_24 AVSS rhigh l=4u w=1.1u
+X99 XR27/R1_7 XR27/R2_6 AVSS rhigh l=4u w=1.1u
+X100 XR27/R1_15 XMN2/S7 AVSS rhigh l=4u w=1.1u
+X101 AVSS AVSS AVSS rhigh l=4u w=1.1u
+X102 XR27/R1_17 XR27/R2_18 AVSS rhigh l=4u w=1.1u
+X103 XR27/R1_31 XR27/R2_30 AVSS rhigh l=4u w=1.1u
+X104 XR27/R1_9 XR27/R2_9 AVSS rhigh l=4u w=1.1u
+X105 XR27/R1_13 XR27/R2_16 AVSS rhigh l=4u w=1.1u
+X106 XR27/R1_23 XR27/R2_22 AVSS rhigh l=4u w=1.1u
+X107 XR27/R1_27 XR27/R2_28 AVSS rhigh l=4u w=1.1u
+X108 AVSS AVSS AVSS rhigh l=4u w=1.1u
+X109 XR27/R1_13 XR27/R2_12 AVSS rhigh l=4u w=1.1u
+X110 XR27/R1_7 XR27/R2_8 AVSS rhigh l=4u w=1.1u
+X111 AVSS AVSS AVSS rhigh l=4u w=1.1u
+X112 XR27/R1_11 XR27/R2_9 AVSS rhigh l=4u w=1.1u
+X113 XR27/R1_29 XR27/R2_30 AVSS rhigh l=4u w=1.1u
+X114 XR27/R1_5 XQ2/E_5 AVSS rhigh l=4u w=1.1u
+X115 XR27/R1_19 XR27/R2_18 AVSS rhigh l=4u w=1.1u
+X116 AVSS AVSS AVSS rhigh l=4u w=1.1u
+X117 XR27/R1_17 XR27/R2_16 AVSS rhigh l=4u w=1.1u
+X118 XMN2/G7 XMNSU2/D AVDD AVSS sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=2u
+X119 AVSS VREF XMNSU2/D AVSS sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
