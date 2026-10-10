@@ -316,7 +316,7 @@ C {sg13cmos5l_pr/sg13_hv_nmos.sym} 920 -90 0 0 {name=MN5
 l=1u
 w=2.6u
 ng=1
-m=2
+m=4
 }
 C {lab_wire.sym} 940 -140 0 0 {name=p14 sig_type=std_logic lab=Vgp}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 640 -480 0 0 {name=MP4
