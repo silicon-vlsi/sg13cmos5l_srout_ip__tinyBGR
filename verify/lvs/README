@@ -1,0 +1,16 @@
+1. Netlist schematic using script `netlist.sh` 
+   -s : spice mode
+   -q : quiet mode
+   -x : exit when done.
+   -r : No readline 
+   --tcl : top is subsckt, NO LVS mode (specific to IHP pcells), spiceprefix (ie. X)
+   -o : output directory
+
+2. The same script has sed statement to remove all 'mm_ok=1' to remove property errors.       
+
+3. Extract magic layout using `../../magic/extract-lvs-net.tcl`
+
+4. Copy `bgr_lvs.spice` from the magic directory.
+
+5. Run `lvs.sh`
+
